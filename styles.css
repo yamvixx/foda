@@ -1,0 +1,111 @@
+/* ============================
+   🎨 PALETA PASTEL GENERAL
+   ============================ */
+:root {
+    --bg: #f5f3ee;               /* Fondo beige pastel */
+    --card-bg: #ffffff;          /* Blanco puro */
+    --accent: #e8dcc2;           /* Beige acento */
+    --accent-strong: #d1c4a5;    /* Beige oscuro para bordes */
+    --text: #2c2c2c;             /* Negro suave */
+    --subtext: #6a6a6a;          /* Gris tenue */
+    --shadow: rgba(0,0,0,0.1);
+    --shadow-hover: rgba(0,0,0,0.18);
+    --font: "Poppins", sans-serif;
+}
+
+/* ============================
+   🌄 BODY GENERAL
+   ============================ */
+body {
+    background: var(--bg);
+    font-family: var(--font);
+    color: var(--text);
+}
+
+/* ============================
+   ⭐ HEADER ESTILO PASTEL
+   (Le quitamos el azul feo)
+   ============================ */
+.header {
+    background: linear-gradient(135deg, #e8dcc2, #f5f3ee);
+    color: var(--text);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    animation: fadeInDown 1s ease;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--subtext);
+}
+
+/* ============================
+   📌 TITULOS DE SECCIÓN
+   ============================ */
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* ============================
+   🔵 FODA CARDS
+   ============================ */
+.foda-card {
+    padding: 20px;
+    border-left: 6px solid var(--accent-strong);
+    border-radius: 12px;
+    background: var(--card-bg);
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foda-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px var(--shadow-hover);
+}
+
+/* ============================
+   📘 ESTRATEGIA CARDS
+   ============================ */
+.strategy-card {
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+    background: var(--card-bg);
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.strategy-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px var(--shadow-hover);
+}
+
+/* ============================
+   🎤 PRESENTACIÓN
+   ============================ */
+.presentation-card {
+    padding: 30px;
+    border-radius: 15px;
+    background: var(--card-bg);
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+/* ============================
+   ✨ ANIMACIÓN
+   ============================ */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
